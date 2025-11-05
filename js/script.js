@@ -83,6 +83,7 @@ const certificates = [
 // Функция для отображения сертификатов
 function renderCertificates() {
   const certificatesContent = document.getElementById("certificatesContent");
+  certificatesContent.innerHTML = ""; // Очищаем контейнер
 
   certificates.forEach((cert) => {
     const certificateItem = document.createElement("div");
@@ -115,9 +116,15 @@ function initCertificatesToggle() {
     if (certificatesContent.classList.contains("active")) {
       certificatesToggle.innerHTML =
         '<span>Скрыть сертификаты</span><i class="fas fa-chevron-up"></i>';
+      // Автоматически подстраиваем высоту под контент
+      setTimeout(() => {
+        certificatesContent.style.maxHeight =
+          certificatesContent.scrollHeight + "px";
+      }, 10);
     } else {
       certificatesToggle.innerHTML =
         '<span>Показать сертификаты</span><i class="fas fa-chevron-down"></i>';
+      certificatesContent.style.maxHeight = "0";
     }
   });
 }
@@ -126,4 +133,13 @@ function initCertificatesToggle() {
 document.addEventListener("DOMContentLoaded", function () {
   renderCertificates();
   initCertificatesToggle();
+});
+
+// Обновляем высоту при изменении размера окна
+window.addEventListener("resize", function () {
+  const certificatesContent = document.getElementById("certificatesContent");
+  if (certificatesContent.classList.contains("active")) {
+    certificatesContent.style.maxHeight =
+      certificatesContent.scrollHeight + "px";
+  }
 });
