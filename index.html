@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме - Бусыгин Олег | Веб-разработчик</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <img src="images/profile.jpg" alt="Фото профиля" class="profile-img">
+                <h1>Бусыгин Олег Валерьевич</h1>
+                <p class="subtitle">Веб-разработчик</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>st-oleg58armia@mail.ru</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+7 (960) 095-80-58</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Волжск, Россия</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <span>github.com/CoolPaK</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section class="section">
+            <h2>Обо мне</h2>
+            <p>Начинающий Веб-разработчик, прошедший проф-переподготовку в онлайн школе Нетология. Специализируюсь на создании современных, отзывчивых веб-приложений с использованием современных технологий. Имею опыт работы как с фронтенд, так и с бэкенд разработкой. Стремлюсь к созданию чистого, эффективного и поддерживаемого кода.</p>
+        </section>
+        
+        <section class="section">
+            <h2>Навыки</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Фронтенд</h3>
+                    <ul class="skill-list">
+                        <li>HTML5, CSS3, JavaScript</li>
+                        <li>React</li>
+                        <li>Адаптивная верстка</li>
+                        <li>Bootstrap</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Бэкенд</h3>
+                    <ul class="skill-list">
+                        <li>PHP</li>
+                        <li>Laravel</li>
+                        <li>Базы данных (SQL)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Инструменты</h3>
+                    <ul class="skill-list">
+                        <li>Git</li>
+                        <li>Алгоритмы и структуры данных</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Образование</h2>
+            <div class="education-item">
+                <div class="job-title">Мастер столярного и мебельного производства</div>
+                <div class="company">Строительно-промышленный колледж</div>
+                <div class="date">2007 - 2010</div>
+            </div>
+            <div class="education-item">
+                <div class="job-title">Проф-переподготовка по профессии Веб-разработчик</div>
+                <div class="company">Онлайн школа Нетология</div>
+                <div class="date">2023 - 2025</div>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Учебные проекты</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-title">Личный блог</div>
+                    <p>Адаптивный блог с системой управления контентом, комментариями и поиском. Реализована админ-панель для управления статьями.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML/CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">PHP</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Интернет-магазин</div>
+                    <p>Прототип интернет-магазина с корзиной, фильтрацией товаров и оформлением заказа. Интегрирована платежная система.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                        <span class="tech-tag">Express</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-title">Приложение для учета финансов</div>
+                    <p>Веб-приложение для отслеживания доходов и расходов с визуализацией статистики и возможностью экспорта данных.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Vue.js</span>
+                        <span class="tech-tag">Firebase</span>
+                        <span class="tech-tag">Chart.js</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section certificates-section">
+            <h2>Сертификаты Нетологии</h2>
+            <button class="certificates-toggle" id="certificatesToggle">
+                <span>Показать сертификаты</span>
+                <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="certificates-content" id="certificatesContent">
+                <!-- Сертификаты будут добавлены через JavaScript -->
+            </div>
+        </section>
+        
+        <footer>
+            <p>© 2025 Бусыгин Олег. Все права защищены.</p>
+        </footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
